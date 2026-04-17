@@ -2,11 +2,11 @@ import google.generativeai as genai
 import os
 import json
 
-# Initialize the Gemini client
+
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 def suggest_task_priority(title: str, description: str) -> dict:
-    # Use Google's currently active model
+   
     model = genai.GenerativeModel("gemini-2.5-flash")
     
     prompt = f"""

@@ -4,7 +4,6 @@ from flask_jwt_extended import create_access_token
 from app.models import User
 from app import db
 
-# THIS is the variable your __init__.py is looking for!
 auth_bp = Blueprint('auth', __name__)
 
 @auth_bp.route('/register', methods=['POST'])
